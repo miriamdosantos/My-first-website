@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/website.png" alt="logo">
+                <p>Web Programming</p>
+            </div>
+            <ul>
+                <li><a href="index.html">HTML</a></li>
+                <li class="active"><a href="css.html">CSS</a></li>
+                <li><a href="javascript.html">Javascript</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="banner">
+        <div class="inner">
+            <h1>CSS</h1>
+            <p>Cascading Style Sheets</p>
+        </div>
+        <video autoplay loop muted playsinline src="images/banner.mp4"></video>
+    </section>
+    <main>
+        <div class="title">
+            <h1>CSS</h1>
+            <h3>(Cascading Style Sheets)</h3>
+        </div>
+        <p>It is for styling this whole structure or the individual.
+            Is works in conjunction with HTML, but is not HTML itself</p>
+        <p>CSS describes how HTML elements should be displayed.</p>
+        <br><br>
+        <h4>Css Selectors Examples:</h4>
+        <br>
+        <div class="css-selectors">
+            <div class="css-selectors-left">
+                <p>The <code>.example_class</code> Selects all elements with <code>class="example_class"</code></p>
+                <p>The <code>#example_id</code> Selects the element with <code>id="example_id"</code></p>
+                <p>The <code>*</code> Selects all elements</p>
+            </div>
+            <img src="images/selector.jpg" class="css-selectors-right" alt="css selector">
+        </div>
+        <br><br>
+        <h4>CSS Example</h4>
+        <br>
+        <div class="example">
+            <code>
+                div {<br>
+                    &nbsp;&nbsp;&nbsp;background-color: gray;<br>
+                    &nbsp;&nbsp;&nbsp;padding: 6rem;<br>
+                }<br><br>
+                h4 {<br>
+                    &nbsp;&nbsp;&nbsp;color: white;<br>
+                    &nbsp;&nbsp;&nbsp;text-align: center;<br>
+                }
+            </code>
+            <div class="example_box">
+                <h4>This is a example</h4>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div>
+            <a href="index.html"><img src="images/html.png" alt="Logo HTML"></a>
+            <a href="css.html"><img src="images/css.png" alt="Logo CSS"></a>
+            <a href="javascript.html"><img src="images/js.png" alt="Logo Javascript"></a>
+        </div>
+        <p>Developed by Miriam | &copy; 2021 All rights reserved</p>
+    </footer>
+
+</body>
+
+</html>

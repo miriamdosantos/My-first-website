@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/website.png" alt="logo">
+                <p>Web Programming</p>
+            </div>
+            <ul>
+                <li><a href="index.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li class="active"><a href="javascript.html">Javascript</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="banner">
+        <div class="inner">
+            <h1>JavaScript</h1>
+        </div>
+        <video autoplay loop muted playsinline src="images/banner.mp4"></video>
+    </section>
+    <main>
+        <div class="title">
+            <h1>Javascript</h1>
+        </div>
+        <div class="js-box">
+            <div class="js-box-left">
+                <p>It is the programming languages that runs in the browsers.</p>
+                <p>Modern JavaScript is a “safe” programming language. It does not provide low-level access to memory or
+                    CPU,
+                    because it was initially created for browsers which do not require it.</p>
+                <p>JavaScript’s capabilities greatly depend on the environment it’s running in. For instance, Node.js
+                    supports
+                    functions that allow JavaScript to read/write arbitrary files, perform network requests, etc.</p>
+            </div>
+            <img src="images/javascript.png" class="js-box-right" alt="css selector">
+        </div>
+        <br><br>
+        <p>In-browser JavaScript can do everything related to webpage manipulation, interaction with the user, and the
+            webserver.</p>
+        <ul class="js_list">
+            <li>it used for adding responsiveness </li>
+            <li>allows designers to create interactive elements </li>
+            <li>Implement basic automation and give users feedback </li>
+            <li>Update Web page content on the fly</li>
+            <li>Communicate with the cloud (javascript + XML: Ajax)</li>
+        </ul>
+        <br><br><br>
+        <div class="example-js">
+            <div class="example-js-item" onclick="changeImage()">
+                <p>Click the light bulb to turn on/off the light.</p>
+                <img id="lighbulb"
+                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/93927/pic_bulboff.gif" width="60" height="120">
+            </div>
+            <div class="example-js-item" onclick="showMessage()">
+                <p>Click the button to show a message.</p>
+                <i class="fa fa-envelope-o" title="Click here"></i>
+            </div>
+    </main>
+    <footer>
+        <div>
+            <a href="index.html"><img src="images/html.png" alt="Logo HTML"></a>
+            <a href="css.html"><img src="images/css.png" alt="Logo CSS"></a>
+            <a href="javascript.html"><img src="images/js.png" alt="Logo Javascript"></a>
+        </div>
+        <p>Developed by Miriam | &copy; 2021 All rights reserved</p>
+    </footer>
+
+</body>
+
+<script>
+    function changeImage() {
+        var image = document.getElementById('lighbulb');
+        if (image.src.match("bulbon")) {
+            image.src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/93927/pic_bulboff.gif";
+        } else {
+            image.src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/93927/pic_bulbon.gif";
+        }
+    }
+
+    function showMessage() {
+        alert("javascript is powerful");
+    }
+</script>
+
+</html>
